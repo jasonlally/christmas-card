@@ -19,7 +19,7 @@
 	<%- @getBlock('meta').toHTML() %>
 
 	<!-- Mobile viewport optimized: h5bp.com/viewport -->
-	<meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- Icons -->
 		<link rel="shortcut icon" href="images/icons/favicon.ico">
@@ -35,53 +35,10 @@
 
 	<!-- Styles -->
 	<%- @getBlock('styles').add(@site.styles).toHTML() %>
+  <link href="http://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Alegreya:700" rel="stylesheet" type="text/css" />
 </head>
 <body>
-	<!-- Menu -->
-	<div class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="/">Project name</a>
-			</div>
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-					<% for document in @getCollection('pages').toJSON(): %>
-						<li
-							typeof="sioc:Page"
-							about="<%= document.url %>"
-							class="<%= 'active'	if @document.url is document.url %>"
-						>
-							<a href="<%= document.url %>" property="dc:title">
-								<%= document.title %>
-							</a>
-						</li>
-					<% end %>
-				</ul>
-			</div><!--/.navbar-collapse -->
-		</div>
-	</div>
-
-	<!-- Content -->
-	<div class="container">
-		<!-- Content -->
-		<section id="content" class="content">
-			<%- @content %>
-		</section>
-
-		<!-- Footer -->
-		<footer>
-			<p class="pull-left">&copy; Company <%- (new Date()).getFullYear() %></p>
-			<p class="pull-right">
-				This website was last updated at <%= @site.date.toISOString() %>
-			</p>
-		</footer>
-	</div><!-- /container -->
-
+  <%- @content %>
 	<!-- Scripts -->
 	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
 </body>
