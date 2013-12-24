@@ -42,7 +42,8 @@
     "docpad-plugin-text": "~2.3.2"
   },
   "devDependencies": {
-    "docpad-plugin-livereload": "~2.5.4"
+    "docpad-plugin-livereload": "~2.5.4",
+    "docpad-plugin-ghpages": "~2.4.1"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
