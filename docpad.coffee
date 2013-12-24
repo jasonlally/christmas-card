@@ -45,10 +45,10 @@ docpadConfig = {
 				"//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"
 				"vendor/twitter-bootstrap/dist/js/bootstrap.min.js"
         "vendor/jquery/jquery.mousewheel.js"
+        "vendor/jquery/jquery.scrollTo-1.4.3.1.js"
+        "vendor/jquery/jquery.localscroll-1.2.7.js"
 				"scripts/script.js"
 			]
-
-
 
 		# -----------------------------
 		# Helper Functions
