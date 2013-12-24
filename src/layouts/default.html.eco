@@ -35,7 +35,7 @@
 
 	<!-- Styles -->
 	<%- @getBlock('styles').add(@site.styles).toHTML() %>
-  <link href="http://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Alegreya:700" rel="stylesheet" type="text/css" />
+  <link href="http://fonts.googleapis.com/css?family=Dancing+Script|Alegreya:700" rel="stylesheet" type="text/css" />
 </head>
 <body>
   <%- @content %>
