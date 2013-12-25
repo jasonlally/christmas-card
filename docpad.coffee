@@ -47,6 +47,7 @@ docpadConfig = {
         "vendor/jquery/jquery.mousewheel.js"
         "vendor/jquery/jquery.scrollTo-1.4.3.1.js"
         "vendor/jquery/jquery.localscroll-1.2.7.js"
+        "vendor/jquery/jquery.backstretch.min.js"
 				"scripts/script.js"
 			]
 

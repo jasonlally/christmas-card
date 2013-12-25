@@ -31,10 +31,13 @@ $(function() {
 
   var nextSection = function(section) {
     return section.next();
-  }
+  };
 
   var prevSection = function(section) {
     return section.prev();
-  }
+  };
+  $("#beginning .inner").backstretch("../images/family_dinner.jpg");
+  $("#second .inner").backstretch("../images/goldengate.jpg");
+  $("#third .inner").backstretch("../images/christmas_lights.jpg");
 });
 
