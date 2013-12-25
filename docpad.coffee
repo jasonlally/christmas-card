@@ -15,7 +15,7 @@ docpadConfig = {
 			url: "http://lally.me/christmas-card"
 
 			# The default title of our website
-			title: "Your Website"
+			title: "From Jason"
 
 			# The website description (for SEO)
 			description: """
