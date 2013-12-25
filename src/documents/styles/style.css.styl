@@ -12,6 +12,7 @@ a, a:link
 body
 html
   height 100%
+  min-width 1024px
 
 table
   tfoot, tbody
@@ -36,11 +37,11 @@ table
 
 .theme-family .inner
   background url(../images/family_dinner.jpg) no-repeat center center fixed
-  background-size cover
+  background-size 100% auto
 
 .theme-bridge .inner
   background url(../images/goldengate.jpg) no-repeat center center fixed
-  background-size cover
+  background-size 100% auto
 
 .theme-christmas .inner
   background url(../images/christmas_lights.jpg) no-repeat center center fixed
@@ -82,3 +83,20 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
   left 0
   right 0
   text-align center
+
+#bg
+  position absolute
+  top -50%
+  left -50%
+  width 150%
+  height 150%
+
+#bg img
+  position absolute
+  top: 0
+  left 0
+  right 0
+  bottom 0
+  margin auto
+  min-width 50%
+  min-height 50%
